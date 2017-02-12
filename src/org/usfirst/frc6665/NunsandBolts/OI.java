@@ -12,6 +12,8 @@
 package org.usfirst.frc6665.NunsandBolts;
 
 import org.usfirst.frc6665.NunsandBolts.commands.*;
+import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.buttons.*;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 
