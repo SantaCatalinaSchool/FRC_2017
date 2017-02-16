@@ -17,7 +17,6 @@ import org.usfirst.frc6665.NunsandBolts.Robot;
  *
  */
 public class Agitator_Start extends Command {
-
 	
     public Agitator_Start() {
         // Use requires() here to declare subsystem dependencies
@@ -32,6 +31,7 @@ public class Agitator_Start extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	Robot.agitator.runAgitator();
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -41,6 +41,7 @@ public class Agitator_Start extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	Robot.agitator.stopAgitator();
     }
 
     // Called when another command which requires one or more of the same

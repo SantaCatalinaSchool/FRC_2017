@@ -43,10 +43,7 @@ public class RobotMap {
 	public static final int RIGHT_BACK_MOTOR = 8; //Right Back Drive Motor PWM Channel
 	
 	public static double collectSetIn = 1.0;
-	public static double collectSetOut = -1.0;
-	
-	public static double feederSpeed;
-	public static double agitatorSpeed;
+	public static double agitatorSpeed = 1.0;
 
     public static void init() {
 

@@ -12,7 +12,6 @@
 package org.usfirst.frc6665.NunsandBolts.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc6665.NunsandBolts.Robot;
-import edu.wpi.first.wpilibj.smartdashboard.*;
 
 /**
  *
@@ -20,12 +19,10 @@ import edu.wpi.first.wpilibj.smartdashboard.*;
 public class DriveTrain_JoystickDrive extends Command {
 
 	
-    public DriveTrain_JoystickDrive() {
-    	
+    public DriveTrain_JoystickDrive() {	
         requires(Robot.driveTrain);
 
     }
-
     // Called just before this Command runs the first time
     protected void initialize() {
     }
@@ -49,5 +46,6 @@ public class DriveTrain_JoystickDrive extends Command {
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
+    	Robot.driveTrain.drive(0,0);
     }
 }
